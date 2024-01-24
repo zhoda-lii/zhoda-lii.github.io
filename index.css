@@ -12,3 +12,8 @@ p {
     color: rgb(9, 0, 128);
     background-color: rgba(241, 100, 206, 0.25);
 }
+
+article, nav {
+    color: rgb(5, 50, 77);
+    background-color: rgba(66, 109, 202, 0.25);
+}
