@@ -1,15 +1,22 @@
-body, html {
-    height: 100%;
+html {
+    height: 100vh;
+    background-color: #000;
+}
+
+body {
     margin: 0;
     font-family: 'Monaco', monospace; /* Use Monaco font */
     font-size: 14px; /* Adjust font size */
 }
 
 .terminal {
-    background-color: #000;
     color: #fff;
     height: 100%;
     padding: 20px;
+}
+
+p, div {
+    margin: 0;
 }
 
 .header {
@@ -37,12 +44,6 @@ body, html {
     /* padding: 10px; */
     background-color: #000;
     border: none;
-    margin-bottom: 10px; /* Add some space between output and input */
-}
-
-.output pre {
-    margin: 0;
-    padding: 0;
 }
 
 
