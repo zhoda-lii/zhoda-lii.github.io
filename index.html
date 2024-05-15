@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Index Page</title>
-        <link rel="stylesheet" href="./index.css" />
+        <title>zhoda-lii | Terminal</title>
+        <link rel="stylesheet" href="./css/index.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <meta charset="UTF-8" />
     </head>
 
     <body>
 
-        <header>
-            <nav>
-                <p>Navigation</p>
-                <ul>
-                    <li><a href="./about.html">About Joash Daligcon</a></li>
-                </ul>
-            </nav>
-            <hr/> <!-- Horizontal Rule -->
-            <h1>Joash's Index Page</h1>
-            <hr/> <!-- Horizontal Rule -->
-        </header>
+        <div class="terminal">
+            <div class="header">
+                <pre>
+         ________  ___  ___  ________  ________  ________                 ___       ___  ___     
+        |\_____  \|\  \|\  \|\   __  \|\   ___ \|\   __  \               |\  \     |\  \|\  \    
+         \|___/  /\ \  \\\  \ \  \|\  \ \  \_|\ \ \  \|\  \  ____________\ \  \    \ \  \ \  \   
+             /  / /\ \   __  \ \  \\\  \ \  \ \\ \ \   __  \|\____________\ \  \    \ \  \ \  \  
+            /  /_/__\ \  \ \  \ \  \\\  \ \  \_\\ \ \  \ \  \|____________|\ \  \____\ \  \ \  \ 
+           |\________\ \__\ \__\ \_______\ \_______\ \__\ \__\              \ \_______\ \__\ \__\
+            \|_______|\|__|\|__|\|_______|\|_______|\|__|\|__|               \|_______|\|__|\|__|
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                </pre>
+                <p>Welcome to my interactive web terminal.</p>
+                <p>For a list of available commands, type 'help'.</p>
+            </div>
 
-        <main>
-            <article>
-                <h2>Name: Joash Daligcon</h2>
-                <h3>Student ID Number: 000358654</h3>
-                <h4>Date: January 15, 2024</h4>
-            </article>
-            <hr/> <!-- Horizontal Rule -->
-        </main>
+            <div class="content">
+                <!-- Terminal Output -->
+                <div class="output">
+                    <pre id="output"></pre>
+                </div>
 
-        <footer>
-            <p>&copy; JD 2024</p>
-        </footer>
+                <!-- Terminal Input -->
+                <div class="input">
+                    <span>guest@zhoda-lii.github.io:~$</span>
+                    <div class="input-container">
+                        <input type="text" id="commandInput" autocomplete="off">
+                        <!-- <span class="cursor">&#9608;</span> -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    
+        <script src="./js/script.js"></script>
 
     </body>
 </html>
