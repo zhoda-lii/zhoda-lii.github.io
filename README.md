@@ -2,8 +2,11 @@
 
 ## Version History
 
+v1.1c
+- Fixed banner size for RMX
+
 v1.1b
-- Fixed banner size for mobile
+- Fixed banner size for iPhone
 
 v1.1
 - Added focus on cursor on any click

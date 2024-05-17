@@ -38,8 +38,8 @@ socials = [
 
 banner = [
     "",
-    "<div>Web Terminal Portfolio [Version 1.1b]</div>",
-    "<div>Copyright (c) 2024. All right, let's go.</div>",
+    "<div>Web Terminal Portfolio [Version 1.1c]</div>",
+    "<div>Copymight (c) 2024. All right, lezgo.</div>",
     "<br>",
     '<div class="banner">.________  ___  ___  ________  ________  ________              ___       ___  ___      </div>',
     '<div class="banner">|\\_____  \\|\\  \\|\\  \\|\\   __  \\|\\   ___ \\|\\   __  \\            |\\  \\     |\\  \\|\\  \\ </div>',
