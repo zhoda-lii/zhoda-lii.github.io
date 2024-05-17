@@ -116,7 +116,7 @@ p, div {
 } */
 
 /* 360, 375, 384, 390, 412, 414, 428 */
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .banner {
         font-size: 15px;
     }
@@ -135,29 +135,37 @@ p, div {
     .banner {
         font-size: 9px;
     }
-} */
+}
+@media screen and (max-width: 415px) {
+    .banner {
+        font-size: 7px;
+    }
+}
+
+
+
 
 /* 360, 375, 384, 390, 412, 414, [428] */
-@media screen and (max-width: 430px) {
+/* @media screen and (max-width: 430px) {
     .banner {
         font-size: 1.9vw;
     }
-}
+} */
 /* 360, 375, 384, 390, [412, 414], 428 */
-@media screen and (max-width: 415px) {
+/* @media screen and (max-width: 415px) {
     .banner {
         font-size: 2vw;
     }
-}
+} */
 /* 360, [375, 384, 390], 412, 414, 428 */
-@media screen and (max-width: 390px) {
+/* @media screen and (max-width: 390px) {
     .banner {
         font-size: 1.8vw;
     }
-}
+} */
 /* [360], 375, 384, 390, 412, 414, 428 */
-@media screen and (max-width: 360px) {
+/* @media screen and (max-width: 360px) {
     .banner {
         font-size: 1.8vw;
     }
-}
+} */

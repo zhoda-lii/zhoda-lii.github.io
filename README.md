@@ -2,6 +2,9 @@
 
 ## Version History
 
+v1.1b
+- Fixed banner size for mobile
+
 v1.1
 - Added focus on cursor on any click
 - Fixed delay after enter key
