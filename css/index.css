@@ -1,22 +1,27 @@
 html {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #000;
 }
 
 body {
     margin: 0;
-    font-family: 'Monaco', monospace; /* Use Monaco font */
+    font-family: 'Monaco', monospace !important; /* Use Monaco font */
     font-size: 14px; /* Adjust font size */
 }
 
+.banner {
+    color: #C0A000;
+}
+
 .terminal {
-    color: #fff;
+    background-color: #000;
+    color: #BFBFBF;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 
 p, div {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .header {
@@ -30,7 +35,12 @@ p, div {
 }
 
 .input span {
-    color: #00ff00;
+    color: #1CA800;
+    flex-shrink: 0 !important;
+}
+
+#commandInput {
+    padding: 0px 0px 0px 0px !important;
 }
 
 .content {
@@ -59,10 +69,29 @@ p, div {
     background-color: transparent;
     border: none;
     outline: none;
-    color: #00ff00;
     font-family: 'Monaco', monospace;
-    font-size: 14px;
-    width: calc(100% - 50px);
+    /* font-size: 14px; */
+    /* width: calc(100% - 50px); */
+}
+
+.txtWhite {
+    color: #BFBFBF !important;
+}
+
+.txtGreen {
+    color: #1CA800 !important;
+}
+
+.txtPurple {
+    color: #B1488D !important;
+}
+
+.txtAqua {
+    color: #00A884 !important;
+}
+
+.txtRed {
+    color: #D42C3A !important;
 }
 
 /* .cursor {
@@ -85,3 +114,44 @@ p, div {
         opacity: 1;
     }
 } */
+
+/* 360, 375, 384, 390, 412, 414, 428 */
+/* @media screen and (max-width: 800px) {
+    .banner {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .banner {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 605px) {
+    .banner {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .banner {
+        font-size: 9px;
+    }
+} */
+
+/* 360, 375, 384, 390, 412, 414, [428] */
+@media screen and (max-width: 430px) {
+    .banner {
+        font-size: 1.9vw;
+    }
+}
+/* 360, 375, 384, 390, [412, 414], 428 */
+@media screen and (max-width: 415px) {
+    .banner {
+        font-size: 2vw;
+    }
+}
+/* 360, 375, 384, 390, [412, 414, 428] */
+@media screen and (max-width: 360px) {
+    .banner {
+        font-size: 1.8vw;
+    }
+}
