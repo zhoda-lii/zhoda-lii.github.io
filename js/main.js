@@ -1,7 +1,70 @@
 let outputDiv = document.getElementById("output");
+// let outputDiv = $("#output");
 let outputEnd = document.getElementById("outputEnd");
 let commandInput = document.getElementById("commandInput");
 
+
+$(document).ready(function() {
+    // Load banner
+    loopLines(banner, "", 30);
+    // Focus when click anywhere
+    $("*").click(function() {
+        $("#commandInput").focus();
+    });
+});
+
+window.addEventListener("keyup", enterKey);
+function enterKey(event) {
+    if (event.key === "Enter") {
+        let command = commandInput.value.toLowerCase();
+        runCommand(command);
+        // Clear input after some delay
+        setTimeout(function() {
+            commandInput.value = "";
+        }, 80);
+    }
+}
+
+
+
+function runCommand(cmd) {
+    if (cmd == "clear") {
+        setTimeout(function() {
+            outputDiv.innerHTML = '<div id="outputEnd"></div>';
+            outputDiv = document.getElementById("output");
+            outputEnd = document.getElementById("outputEnd");
+            commandInput = document.getElementById("commandInput");
+            window.scrollTo(0, document.body.scrollTop);
+        }, 1);
+    } else {
+        addLine(`<span class="txtGreen">guest@zhoda-lii.github.io</span><span class="txtWhite">:</span><span class="txtAqua">~</span><span class="txtWhite">$</span> <span class="txtWhite">${commandInput.value}</span>`, "", 80);
+        switch(cmd.toLowerCase().trim()) {
+            case "":
+                break;
+                case "who":
+                    loopLines(who, "", 80);
+                    break;
+            case "projects":
+                loopLines(projects, "", 80);
+                break;
+            case "socials":
+                loopLines(socials, "", 80);
+                break;
+            case "email":
+                addLine(`Email Address: <a href="${email}">zhoda.lii@gmx.ca</a><br><br>`, "", 80);
+                break;
+            case "banner":
+                loopLines(banner, "", 80);
+                break;
+            case "help":
+                loopLines(help, "", 80);
+                break;
+            default:
+                addLine(`<div><span class="txtRed">Command not found: ${cmd}</span><br>To view the list of available commands, type '<span class="txtPurple">help</span>'.</div><br>`, "", 80);
+                break;
+        }
+    }
+}
 
 function addLine(text, style, time) {
     let txtString = "";
@@ -21,7 +84,9 @@ function addLine(text, style, time) {
             pElement.className = style;
 
             outputEnd.parentNode.insertBefore(pElement, outputEnd);
-            window.scrollTo(0, document.body.offsetHeight);
+            console.log(document.body.scrollHeight);
+            window.scrollTo(0, document.body.scrollHeight + 1000);
+            $("#commandInput").focus();
         }, time);
 }
   
@@ -35,55 +100,4 @@ function loopLines(name, style, time) {
     name.forEach(function(item) {
         addLine(item, style, time);
     });
-}
-
-function runCommand(cmd) {
-    if (cmd == "clear") {
-        setTimeout(function() {
-            outputDiv.innerHTML = '<div id="outputEnd"></div>';
-            outputDiv = document.getElementById("output");
-            outputEnd = document.getElementById("outputEnd");
-            commandInput = document.getElementById("commandInput");
-        }, 1);
-    } else {
-        addLine(`<span style="color: #00ff00;">guest@zhoda-lii.github.io:~$ ${commandInput.value}</span>`, "", 80);
-        switch(cmd.toLowerCase()) {
-            case "who":
-                loopLines(who, "", 80);
-                break;
-            case "projects":
-                loopLines(projects, "", 80);
-                break;
-            case "socials":
-                loopLines(socials, "", 80);
-                break;
-            case "email":
-                addLine(`Email Address: <a href="${email}">zhoda.lii@gmx.ca</a><br><br>`, "", 80);
-                break;
-            case "banner":
-                loopLines(banner, "", 80);
-                break;
-            case "help":
-                loopLines(help, "", 80);
-                break;
-            default:
-                addLine(`<div>Command not found: ${cmd}<br>For a list of available commands, type 'help'.</div><br>`, "", 80);
-                break;
-        }
-    }
-}
-
-$(document).ready(function() {
-    // Load banner
-    loopLines(banner, "", 30);
-
-});
-
-window.addEventListener("keyup", enterKey);
-function enterKey(event) {
-    if (event.key === "Enter") {
-        let command = commandInput.value.toLowerCase();
-        runCommand(command);
-        commandInput.value = ""; // Clear input
-    }
 }
