@@ -149,7 +149,13 @@ p, div {
         font-size: 2vw;
     }
 }
-/* 360, 375, 384, 390, [412, 414, 428] */
+/* 360, [375, 384, 390], 412, 414, 428 */
+@media screen and (max-width: 390px) {
+    .banner {
+        font-size: 1.8vw;
+    }
+}
+/* [360], 375, 384, 390, 412, 414, 428 */
 @media screen and (max-width: 360px) {
     .banner {
         font-size: 1.8vw;
