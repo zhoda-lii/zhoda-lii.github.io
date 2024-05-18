@@ -41,17 +41,32 @@ function runCommand(cmd) {
         switch(cmd.toLowerCase().trim()) {
             case "":
                 break;
-                case "who":
-                    loopLines(who, "", 80);
-                    break;
+            case "who":
+                loopLines(who, "", 80);
+                break;
             case "projects":
                 loopLines(projects, "", 80);
+                break;
+            case "fuelprice":
+                loopLines(fuelprice, "", 80);
+                break;
+            case "stockmarket":
+                loopLines(stockmarket, "", 80);
+                break;
+            case "gymtracker":
+                loopLines(gymtracker, "", 80);
+                break;
+            case "testgenius":
+                loopLines(testgenius, "", 80);
+                break;
+            case "esports":
+                loopLines(esports, "", 80);
                 break;
             case "socials":
                 loopLines(socials, "", 80);
                 break;
             case "email":
-                addLine(`Email Address: <a href="${email}">zhoda.lii@gmx.ca</a><br><br>`, "", 80);
+                loopLines(email, "", 80);
                 break;
             case "banner":
                 loopLines(banner, "", 80);
@@ -84,7 +99,6 @@ function addLine(text, style, time) {
             pElement.className = style;
 
             outputEnd.parentNode.insertBefore(pElement, outputEnd);
-            console.log(document.body.scrollHeight);
             window.scrollTo(0, document.body.scrollHeight + 1000);
             $("#commandInput").focus();
         }, time);
