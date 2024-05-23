@@ -1,12 +1,11 @@
 let outputDiv = document.getElementById("output");
-// let outputDiv = $("#output");
 let outputEnd = document.getElementById("outputEnd");
 let commandInput = document.getElementById("commandInput");
 
 
 $(document).ready(function() {
     // Load banner
-    loopLines(banner, "", 30);
+    loopLines(banner, "", 80);
     // Focus when click anywhere
     $("*").click(function() {
         $("#commandInput").focus();
@@ -103,15 +102,9 @@ function addLine(text, style, time) {
             $("#commandInput").focus();
         }, time);
 }
-  
-// function loopLines(name, style, time) {
-//     name.forEach(function(item, index) {
-//         addLine(item, style, index * time);
-//     });
-// }
-  
+
 function loopLines(name, style, time) {
-    name.forEach(function(item) {
-        addLine(item, style, time);
+    name.forEach(function(item, index) {
+        addLine(item, style, index * time);
     });
 }

@@ -2,45 +2,58 @@ let linkedin = 'https://www.linkedin.com/in/joashdaligcon/';
 let github = 'https://github.com/zhoda-lii/';
 let email = 'mailto:zhoda.lii@gmx.ca';
 
+
+banner = [
+    "",
+    "<div>Web Terminal Portfolio [Version 1.3]</div>",
+    "<div>Copymight (c) 2024. All right, lezgo.</div>",
+    "<br>",
+    '<div class="banner">.________  ___  ___  ________  ________  ________              ___       ___  ___      </div>',
+    '<div class="banner">|\\_____  \\|\\  \\|\\  \\|\\   __  \\|\\   ___ \\|\\   __  \\            |\\  \\     |\\  \\|\\  \\ </div>',
+    '<div class="banner"> \\|____/  /\\ \\  \\\\\\  \\ \\  \\|\\  \\ \\  \\_|\\ \\ \\  \\|\\  \\  _________\\ \\  \\    \\ \\  \\ \\  \\    </div>',
+    '<div class="banner">     /  / /\\ \\   __  \\ \\  \\\\\\  \\ \\  \\ \\\\ \\ \\   __  \\|\\_________\\ \\  \\    \\ \\  \\ \\  \\   </div>',
+    '<div class="banner">    /  /_/__\\ \\  \\ \\  \\ \\  \\\\\\  \\ \\  \\_\\\\ \\ \\  \\ \\  \\|_________|\\ \\  \\____\\ \\  \\ \\  \\  </div>',
+    '<div class="banner">   |\\________\\ \\__\\ \\__\\ \\_______\\ \\_______\\ \\__\\ \\__\\           \\ \\_______\\ \\__\\ \\__\\ </div>',
+    '<div class="banner">    \\|_______|\\|__|\\|__|\\|_______|\\|_______|\\|__|\\|__|            \\|_______|\\|__|\\|__| </div>',
+    "<br><br>",
+    `<div>To view the list of available commands, type '<span class="txtPurple">help</span>'.</div>`,
+    "<br>"
+];
+
 help = [
-    '',
-    '---------------------------------------------',
-    '<span class="txtAqua">Command         Description</span>',
-    '---------------------------------------------',
+    "",
+    `<span class="txtAqua">Command         Description</span>`,
     '<span class="txtPurple">who</span>             Show who is zhoda-lii',
     '<span class="txtPurple">projects</span>        View coding projects',
     '<span class="txtPurple">socials</span>         Display social networks',
     '<span class="txtPurple">email</span>           Send an email to me',
     '<span class="txtPurple">clear</span>           Clear terminal',
     '<span class="txtPurple">banner</span>          Display the banner',
-    '<span class="txtPurple">help</span>            Show available commands',
-    '---------------------------------------------',
-    '<br>',
-];
+    '<span class="txtPurple">help</span>            List available commands',
+    "<br>"
+]
 
 who = [
     "",
-    "Hey, my real name is Joash!👋",
+    "Hey there, my real name is Joash!👋",
     "I'm known as zhoda-lii by colleagues.",
     "I'm a computer science student in Canada.",
-    "I like spicy ramen!",
+    "I like eating spicy ramen while coding!",
     "<br>"
-];
+]
 
 projects = [
-    'Type the command to see the project overview.',
-    '---------------------------------------------',
-    '<span class="txtAqua">Command         Technology Used</span>',
-    '---------------------------------------------',
+    "",
+    `<span class="txtAqua">Command         Technology Used</span>`,
     '<span class="txtPurple">fuelprice</span>       Excel, VBA, IE Automation',
     '<span class="txtPurple">stockmarket</span>     Excel, VBA',
     '<span class="txtPurple">gymtracker</span>      SQL, Python',
     '<span class="txtPurple">testgenius</span>      Python',
     '<span class="txtPurple">esports</span>         Web Development',
-    '---------------------------------------------',
+    '<br>',
     'You can view some of my project files at my github page.',
     '<br>'
-];
+]
 
 fuelprice = [
     "",
@@ -62,7 +75,7 @@ stockmarket = [
     "<br>",
     "It also calculates the possible combination of different portolio allocations and displays the Efficient Frontier Graph using the portfolio variance and the standard deviation.",
     "<br>",
-    "Furthermore, it calculates the return and risk level depending on the user preference, either by maximizating return at an acceptable risk level or by minimizing risk at a targeted return.",
+    "Furthermore, the optimisation is done depending on the user preference, either by maximizing the return at an acceptable risk level or by minimizing the risk at a targeted return.",
     '<br>'
 ]
 
@@ -72,7 +85,7 @@ gymtracker = [
     '<br>',
     "This database project manages aspects of gym operations such as member registration, attendance tracking, and payment transactions.",
     "<br>",
-    "It also monitors members’ progress through attributes such as calorie intake, height, and weight for effective fitness management.",
+    "It also monitors members' progress through attributes such as calorie intake, height, and weight for effective fitness management.",
     "<br>",
     "Furthermore, it keeps track of trainer assignments and equipment usage, that can aid in determining training insights and optimizing the overall gym experience.",
     '<br>'
@@ -105,27 +118,10 @@ socials = [
     'Linkedin:       <a href="' + linkedin + '" target="_blank">linkedin/joashdaligcon' + "</a>",
     'Github:         <a href="' + github + '" target="_blank">github/zhoda-lii' + '</a>',
     "<br>"
-];
+]
 
 email = [
     "",
     'Email Address:  <a href="' + email + '">zhoda.lii@gmx.ca</a>',
     "<br>"
-];
-
-banner = [
-    "",
-    "<div>Web Terminal Portfolio [Version 1.2]</div>",
-    "<div>Copymight (c) 2024. All right, lezgo.</div>",
-    "<br>",
-    '<div class="banner">.________  ___  ___  ________  ________  ________              ___       ___  ___      </div>',
-    '<div class="banner">|\\_____  \\|\\  \\|\\  \\|\\   __  \\|\\   ___ \\|\\   __  \\            |\\  \\     |\\  \\|\\  \\ </div>',
-    '<div class="banner"> \\|____/  /\\ \\  \\\\\\  \\ \\  \\|\\  \\ \\  \\_|\\ \\ \\  \\|\\  \\  _________\\ \\  \\    \\ \\  \\ \\  \\    </div>',
-    '<div class="banner">     /  / /\\ \\   __  \\ \\  \\\\\\  \\ \\  \\ \\\\ \\ \\   __  \\|\\_________\\ \\  \\    \\ \\  \\ \\  \\   </div>',
-    '<div class="banner">    /  /_/__\\ \\  \\ \\  \\ \\  \\\\\\  \\ \\  \\_\\\\ \\ \\  \\ \\  \\|_________|\\ \\  \\____\\ \\  \\ \\  \\  </div>',
-    '<div class="banner">   |\\________\\ \\__\\ \\__\\ \\_______\\ \\_______\\ \\__\\ \\__\\           \\ \\_______\\ \\__\\ \\__\\ </div>',
-    '<div class="banner">    \\|_______|\\|__|\\|__|\\|_______|\\|_______|\\|__|\\|__|            \\|_______|\\|__|\\|__| </div>',
-    "<br><br>",
-    `<div>To view the list of available commands, type '<span class="txtPurple">help</span>'.</div>`,
-    "<br>"
-];
+]

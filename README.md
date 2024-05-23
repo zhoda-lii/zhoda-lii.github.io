@@ -4,6 +4,10 @@ Interactive Web Terminal Portfolio
 
 ## Version History
 
+#### v1.3
+- Added text delay animation 
+- Minor text changes
+
 #### v1.2
 - Aligned text for socials and email
 - Added sub commands for projects
