@@ -4,6 +4,11 @@ Interactive Web Terminal Portfolio
 
 ## Version History
 
+#### v1.4b
+- Updated year to dynamic 
+- Refactored code 
+- Minor text changes 
+
 #### v1.4
 - Added exit command 
 - Updated project list 

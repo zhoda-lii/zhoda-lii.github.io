@@ -55,15 +55,17 @@ function runCommand(cmd) {
             case "gymtracker":
                 loopLines(gymtracker, "", 80);
                 break;
-            case "testgenius":
-                loopLines(testgenius, "", 80);
-                break;
             case "carspecify":
                 loopLines(carspecify, "", 80);
                 break;
             case "esports":
                 loopLines(esports, "", 80);
                 break;
+            case "testgenius":
+                loopLines(testgenius, "", 80);
+                break;
+            // case "showall":
+            //     break;
             case "socials":
                 loopLines(socials, "", 80);
                 break;

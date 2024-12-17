@@ -1,12 +1,13 @@
 let linkedin = 'https://www.linkedin.com/in/joashdaligcon/';
 let github = 'https://github.com/zhoda-lii/';
 let email = 'mailto:zhoda.lii@gmx.ca';
+let year = new Date().getFullYear();
 
 
 banner = [
     "",
-    "<div>Web Terminal Portfolio [Version 1.4]</div>",
-    "<div>Copymight (c) 2024. All right, lezgo.</div>",
+    "<div>Web Terminal Portfolio [Version 1.4b]</div>",
+    "<div>Copymight (c) " + year + ". All right, lezgo.</div>",
     "<br>",
     '<div class="banner">.________  ___  ___  ________  ________  ________              ___       ___  ___      </div>',
     '<div class="banner">|\\_____  \\|\\  \\|\\  \\|\\   __  \\|\\   ___ \\|\\   __  \\            |\\  \\     |\\  \\|\\  \\ </div>',
@@ -45,13 +46,14 @@ who = [
 
 projects = [
     "",
-    `<span class="txtAqua">Command         Technology Used</span>`,
+    `<span class="txtAqua">Command         Description</span>`,
     '<span class="txtPurple">fuelprice</span>       Excel, VBA, IE Automation',
     '<span class="txtPurple">stockmarket</span>     Excel, VBA',
     '<span class="txtPurple">gymtracker</span>      SQL, Python',
-    '<span class="txtPurple">carspecify</span>      jQuery',
+    '<span class="txtPurple">carspecify</span>      jQuery, HTML, CSS',
     '<span class="txtPurple">esports</span>         HTML, CSS',
     '<span class="txtPurple">testgenius</span>      Python',
+    // '<span class="txtPurple">showall</span>         Show all projects',
     '<br>',
     'You can view some of my project files at my github page.',
     '<br>'
