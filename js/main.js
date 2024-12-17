@@ -2,7 +2,6 @@ let outputDiv = document.getElementById("output");
 let outputEnd = document.getElementById("outputEnd");
 let commandInput = document.getElementById("commandInput");
 
-
 $(document).ready(function() {
     // Load banner
     loopLines(banner, "", 80);
@@ -15,7 +14,8 @@ $(document).ready(function() {
 window.addEventListener("keyup", enterKey);
 function enterKey(event) {
     if (event.key === "Enter") {
-        let command = commandInput.value.toLowerCase();
+        // Trim command input
+        let command = commandInput.value.toLowerCase().trim();
         runCommand(command);
         // Clear input after some delay
         setTimeout(function() {
@@ -24,10 +24,10 @@ function enterKey(event) {
     }
 }
 
-
-
 function runCommand(cmd) {
-    if (cmd == "clear") {
+    if (cmd == "exit") {
+        window.close();
+    } else if (cmd == "clear") {
         setTimeout(function() {
             outputDiv.innerHTML = '<div id="outputEnd"></div>';
             outputDiv = document.getElementById("output");
@@ -37,7 +37,7 @@ function runCommand(cmd) {
         }, 1);
     } else {
         addLine(`<span class="txtGreen">guest@zhoda-lii.github.io</span><span class="txtWhite">:</span><span class="txtAqua">~</span><span class="txtWhite">$</span> <span class="txtWhite">${commandInput.value}</span>`, "", 80);
-        switch(cmd.toLowerCase().trim()) {
+        switch(cmd) {
             case "":
                 break;
             case "who":
@@ -57,6 +57,9 @@ function runCommand(cmd) {
                 break;
             case "testgenius":
                 loopLines(testgenius, "", 80);
+                break;
+            case "carspecify":
+                loopLines(carspecify, "", 80);
                 break;
             case "esports":
                 loopLines(esports, "", 80);

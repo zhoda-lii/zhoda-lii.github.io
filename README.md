@@ -4,6 +4,10 @@ Interactive Web Terminal Portfolio
 
 ## Version History
 
+#### v1.4
+- Added exit command 
+- Updated project list 
+
 #### v1.3
 - Added text delay animation 
 - Minor text changes

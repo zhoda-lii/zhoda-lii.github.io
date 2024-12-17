@@ -5,7 +5,7 @@ let email = 'mailto:zhoda.lii@gmx.ca';
 
 banner = [
     "",
-    "<div>Web Terminal Portfolio [Version 1.3]</div>",
+    "<div>Web Terminal Portfolio [Version 1.4]</div>",
     "<div>Copymight (c) 2024. All right, lezgo.</div>",
     "<br>",
     '<div class="banner">.________  ___  ___  ________  ________  ________              ___       ___  ___      </div>',
@@ -27,9 +27,10 @@ help = [
     '<span class="txtPurple">projects</span>        View coding projects',
     '<span class="txtPurple">socials</span>         Display social networks',
     '<span class="txtPurple">email</span>           Send an email to me',
-    '<span class="txtPurple">clear</span>           Clear terminal',
     '<span class="txtPurple">banner</span>          Display the banner',
     '<span class="txtPurple">help</span>            List available commands',
+    '<span class="txtPurple">clear</span>           Clear terminal',
+    '<span class="txtPurple">exit</span>            Exit terminal',
     "<br>"
 ]
 
@@ -48,8 +49,9 @@ projects = [
     '<span class="txtPurple">fuelprice</span>       Excel, VBA, IE Automation',
     '<span class="txtPurple">stockmarket</span>     Excel, VBA',
     '<span class="txtPurple">gymtracker</span>      SQL, Python',
+    '<span class="txtPurple">carspecify</span>      jQuery',
+    '<span class="txtPurple">esports</span>         HTML, CSS',
     '<span class="txtPurple">testgenius</span>      Python',
-    '<span class="txtPurple">esports</span>         Web Development',
     '<br>',
     'You can view some of my project files at my github page.',
     '<br>'
@@ -91,15 +93,15 @@ gymtracker = [
     '<br>'
 ]
 
-testgenius = [
+carspecify = [
     "",
-    '<span class="txtAqua">TestGenius: Your Test Simulator</span>',
+    '<span class="txtAqua">CarSpecify: Vehicle Specification and Price Comparison Web App</span>',
     '<br>',
-    "This project aims to make exam preparation convenient through a test simulator tool that can help students reduce stress and boost confidence.",
+    "This project is designed to simplify the process of researching and comparing vehicles for potential buyers.",
     "<br>",
-    "Students can consolidate Q&As for various topics and the tool reads them. This allows students to generate a customized study session in a simple click.",
-    "<br>",
-    "It provides immediate feedback on answers to each question and it outputs the practice test results and percentages at the end of each session.",
+    "It allows users to view comprehensive specifications for various car models, having all the details together in one website.",
+    '<br>',
+    "Furthermore, it empowers users to compare and contrast key features such as performance, safety ratings, fuel efficiency, and pricing.",
     '<br>'
 ]
 
@@ -110,6 +112,18 @@ esports = [
     "This project offers comprehensive coverage and resources for three popular esports titles: Counter-Strike 2, Dota 2, and Valorant.",
     "<br>",
     "It aims to provide players and fans with concise information, strategies, and updates to enhance their gaming experience and keep them informed about the latest developments in these competitive games.",
+    '<br>'
+]
+
+testgenius = [
+    "",
+    '<span class="txtAqua">TestGenius: Your Test Simulator</span>',
+    '<br>',
+    "This project aims to make exam preparation convenient through a test simulator tool that can help students reduce stress and boost confidence.",
+    "<br>",
+    "Students can consolidate Q&As for various topics and the tool reads them. This allows students to generate a customized study session in a simple click.",
+    "<br>",
+    "It provides immediate feedback on answers to each question and it outputs the practice test results and percentages at the end of each session.",
     '<br>'
 ]
 
