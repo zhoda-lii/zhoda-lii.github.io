@@ -2,11 +2,12 @@ let linkedin = 'https://www.linkedin.com/in/joashdaligcon/';
 let github = 'https://github.com/zhoda-lii/';
 let email = 'mailto:zhoda.lii@gmx.ca';
 let year = new Date().getFullYear();
+let version = "1.4b"
 
 
 banner = [
     "",
-    "<div>Web Terminal Portfolio [Version 1.4b]</div>",
+    "<div>Web Terminal Portfolio [Version " + version + "]</div>",
     "<div>Copymight (c) " + year + ". All right, lezgo.</div>",
     "<br>",
     '<div class="banner">.________  ___  ___  ________  ________  ________              ___       ___  ___      </div>',
@@ -53,7 +54,7 @@ projects = [
     '<span class="txtPurple">carspecify</span>      jQuery, HTML, CSS',
     '<span class="txtPurple">esports</span>         HTML, CSS',
     '<span class="txtPurple">testgenius</span>      Python',
-    // '<span class="txtPurple">showall</span>         Show all projects',
+    '<span class="txtPurple">showall</span>         Show all projects',
     '<br>',
     'You can view some of my project files at my github page.',
     '<br>'
