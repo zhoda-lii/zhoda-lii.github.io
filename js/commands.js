@@ -54,7 +54,7 @@ projects = [
     '<span class="txtPurple">carspecify</span>      jQuery, HTML, CSS',
     '<span class="txtPurple">esports</span>         HTML, CSS',
     '<span class="txtPurple">testgenius</span>      Python',
-    '<span class="txtPurple">showall</span>         Show all projects',
+    // '<span class="txtPurple">showall</span>         Show all projects',
     '<br>',
     'You can view some of my project files at my github page.',
     '<br>'
