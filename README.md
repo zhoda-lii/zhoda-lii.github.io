@@ -1,8 +1,12 @@
 # zhoda-lii.github.io
 
-Interactive Web Terminal Portfolio
+zhoda-lii's interactive web terminal portfolio
 
 ## Version History
+
+#### v1.4c
+- Added new projects 
+- Minor text changes 
 
 #### v1.4b
 - Updated year to dynamic 

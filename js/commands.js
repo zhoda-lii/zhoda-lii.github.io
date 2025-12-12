@@ -2,7 +2,7 @@ let linkedin = 'https://www.linkedin.com/in/joashdaligcon/';
 let github = 'https://github.com/zhoda-lii/';
 let email = 'mailto:zhoda.lii@gmx.ca';
 let year = new Date().getFullYear();
-let version = "1.4b"
+let version = "1.4c"
 
 
 banner = [
@@ -40,31 +40,60 @@ who = [
     "",
     "Hey there, my real name is Joash!👋",
     "I'm known as zhoda-lii by colleagues.",
-    "I'm a computer science student in Canada.",
-    "I like eating spicy ramen while coding!",
+    "I'm a computer programming student in Canada.",
+    "Random fact: I like spicy ramen!",
     "<br>"
 ]
 
 projects = [
     "",
-    `<span class="txtAqua">Command         Description</span>`,
-    '<span class="txtPurple">fuelprice</span>       Excel, VBA, IE Automation',
-    '<span class="txtPurple">stockmarket</span>     Excel, VBA',
+    `<span class="txtAqua">Command         Technologies</span>`,
+    '<span class="txtPurple">cloudkitchen</span>    Flutter/Dart, Firebase',
+    '<span class="txtPurple">temperaments</span>    jQuery, HTML, CSS',
+    '<span class="txtPurple">fuelprice</span>       Excel, VBA, UI Automation',
     '<span class="txtPurple">gymtracker</span>      SQL, Python',
+    '<span class="txtPurple">stockmarket</span>     Excel, VBA',
     '<span class="txtPurple">carspecify</span>      jQuery, HTML, CSS',
-    '<span class="txtPurple">esports</span>         HTML, CSS',
+    // '<span class="txtPurple">esports</span>         HTML, CSS',
     '<span class="txtPurple">testgenius</span>      Python',
     // '<span class="txtPurple">showall</span>         Show all projects',
     '<br>',
-    'You can view some of my project files at my github page.',
+    'You can explore more of my project work on my GitHub page.',
     '<br>'
 ]
+
+cloudkitchen = [
+    "",
+    '<span class="txtAqua">Cloud Kitchen Mobile App</span>',
+    '<br>',
+    'The Cloud Kitchen initiative aims to connect students in need with affordable meals while supporting local food providers.',
+    '<br>',
+    'Rising food costs are causing many students and underprivileged individuals to skip meals or choose unhealthy options, which affects their nutrition, academic performance, and overall well-being.',
+    'Local food businesses are also looking for better ways to increase sales, reach more customers, and reduce food waste.',
+    'The platform bridges this gap by offering affordable, subsidized meals from verified restaurants and home-based kitchens, creating a win-win system for both students and vendors.',
+    '<br>',
+    'This project is supported by funding from Red Deer Polytechnic (RDP) and the Natural Sciences and Engineering Research Council of Canada (NSERC).',
+    '<br>'
+];
+
+temperaments = [
+    "",
+    '<span class="txtAqua">4 Temperaments Personality Tool</span>',
+    '<br>',
+    'An evaluation tool designed to help users explore their personality using the classical Four Temperaments framework: Sanguine, Choleric, Melancholic, and Phlegmatic.',
+    '<br>',
+    'The tool identifies core characteristics, behavioral tendencies, and personal preferences based on user responses, offering a simple yet insightful way to understand individual strengths and patterns.',
+    'It provides an accessible method for self-reflection, helping users gain clarity about their temperament and how it influences decision-making, communication, and daily interactions.',
+    '<br>',
+    'This project highlights the integration of classical psychological concepts with modern user-friendly design to create an engaging self-assessment experience.',
+    '<br>'
+];
 
 fuelprice = [
     "",
     '<span class="txtAqua">Fuel Price Data Scrape Tool</span>',
     '<br>',
-    'This project automates the gathering of fuel price data from Motormouth.com.au and Petrolspy.com.au using Internet Explorer (IE) Automation and VBA. It gathers data for five different types of fuel: Unleaded, Premium Unleaded 95, Premium Unleaded 98, E10 and Diesel based on specific GPS coordinates.',
+    'This project automates the gathering of fuel price data from Motormouth.com.au and Petrolspy.com.au using data scraping through UI Automation and VBA. It gathers data for five different types of fuel: Unleaded, Premium Unleaded 95, Premium Unleaded 98, E10 and Diesel based on specific GPS coordinates.',
     '<br>',
     'The tool displays the information in a structured table with average prices as well as time data for the target area. Moreover, it has features like clearing previous data but keeping its necessary structure to enable easy updates. It also contains icon markers for a much clearer presentation of data.',
     '<br>',

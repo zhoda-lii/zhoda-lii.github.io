@@ -46,6 +46,12 @@ function runCommand(cmd) {
             case "projects":
                 loopLines(projects, "", 80);
                 break;
+            case "cloudkitchen":
+                loopLines(cloudkitchen, "", 80);
+                break;
+            case "temperaments":
+                loopLines(temperaments, "", 80);
+                break;
             case "fuelprice":
                 loopLines(fuelprice, "", 80);
                 break;
